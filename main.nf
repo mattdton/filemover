@@ -1,3 +1,4 @@
+nextflow.enable.dsl=1
 inbox = params.inbox
 staging = params.staging
 logs = params.logs

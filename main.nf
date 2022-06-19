@@ -17,7 +17,7 @@ process fileInfo {
     size = f.size()
     name = f.getName()
     """
-    MD5=\$(md5sum $f)
+    MD5=\$(md5sum $f | awk '{print $1}')
     """
 }
 

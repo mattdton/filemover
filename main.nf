@@ -37,7 +37,7 @@ process log {
 
     exec:
     Date date = new Date()
-    String logfile = date.format("yyyy-mm-dd") + ".log"
+    String logfile = date.format("yyyy-MM-dd") + ".log"
     fh = file(logs + '/' + logfile)
     f.each {
         outputString = sprintf("%s\t%s\t%s\n",it)
